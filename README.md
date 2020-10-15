@@ -34,6 +34,11 @@ patch < [patch file]
 
 > [scratchpad](https://dwm.suckless.org/patches/scratchpad/) 添加一个临时的浮动居中终端，可以显示隐藏
 
+3. awesomebar
+
+> [awesomebar](https://dwm.suckless.org/patches/awesomebar/) 状态栏显示多个窗口标题，同时可以显示隐藏窗口
+
+
 ## APP
 
 + ranger
@@ -44,8 +49,10 @@ patch < [patch file]
 
 | 键                          | 说明                                   |
 | --------------------------- | -------------------------------------- |
-| `<super>` + `j`             | 下一个窗口                             |
-| `<super>` + `k`             | 上一个窗口                             |
+| `<super>` + `j`             | 下一个显示的窗口                       |
+| `<super>` + `k`             | 上一个显示的窗口                       |
+| `<super>` + `j`             | 下一个窗口（包括隐藏窗口）             |
+| `<super>` + `k`             | 上一个窗口（包括隐藏窗口）             |
 | `<super>` + `h`             | 缩小窗口                               |
 | `<super>` + `l`             | 扩大窗口                               |
 | `<super>` + `q`             | 退出窗口                               |

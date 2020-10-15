@@ -16,6 +16,7 @@ static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeHid]  = { col_cyan,  col_gray1, col_cyan  },
 };
 
 /* tagging 标签名字 */
@@ -97,10 +98,14 @@ static Key keys[] = {
         { MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
         // 显示 隐藏 状态栏
         { MODKEY,                       XK_b,      togglebar,      {0} },
-        // 下一个窗口
-        { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
-        // 上一个窗口
-        { MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
+        // 下一个显示的窗口
+        { MODKEY,                       XK_j,      focusstackvis,  {.i = +1 } },
+        // 上一个显示的窗口
+        { MODKEY,                       XK_k,      focusstackvis,  {.i = -1 } },
+        // 下一个窗口（包括隐藏窗口）
+	{ MODKEY|ShiftMask,             XK_j,      focusstackhid,  {.i = +1 } },
+        // 上一个窗口（包括隐藏窗口）
+	{ MODKEY|ShiftMask,             XK_k,      focusstackhid,  {.i = -1 } },
         // 水平窗口
         { MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
         // 垂直窗口
@@ -135,7 +140,11 @@ static Key keys[] = {
         { MODKEY,                       XK_period, focusmon,       {.i = +1 } },
         { MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
         { MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-        TAGKEYS(                        XK_1,                      0)
+        // 显示当前窗口
+	{ MODKEY,                       XK_s,      show,           {0} },
+        // 隐藏当前窗口
+	{ MODKEY,                       XK_h,      hide,           {0} },
+	TAGKEYS(                        XK_1,                      0)
         TAGKEYS(                        XK_2,                      1)
         TAGKEYS(                        XK_3,                      2)
         TAGKEYS(                        XK_4,                      3)
@@ -154,6 +163,7 @@ static Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
+	{ ClkWinTitle,          0,              Button1,        togglewin,      {0} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
