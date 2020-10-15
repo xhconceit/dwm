@@ -38,6 +38,9 @@ patch < [patch file]
 
 > [awesomebar](https://dwm.suckless.org/patches/awesomebar/) 状态栏显示多个窗口标题，同时可以显示隐藏窗口
 
+4. fullscreen
+
+> [fullscreen](https://dwm.suckless.org/patches/fullscreen/) 窗口全屏
 
 ## APP
 
@@ -51,8 +54,10 @@ patch < [patch file]
 | --------------------------- | -------------------------------------- |
 | `<super>` + `j`             | 下一个显示的窗口                       |
 | `<super>` + `k`             | 上一个显示的窗口                       |
-| `<super>` + `j`             | 下一个窗口（包括隐藏窗口）             |
-| `<super>` + `k`             | 上一个窗口（包括隐藏窗口）             |
+| `<super>` + `<Shift>` + `j` | 下一个窗口（包括隐藏窗口）             |
+| `<super>` + `<Shift>` + `k` | 上一个窗口（包括隐藏窗口）             |
+| `<super>` + `<Shift>` + `s` | 显示当前窗口                           |
+| `<super>` + `<Shift>` + `h` | 隐藏当前窗口                           |
 | `<super>` + `h`             | 缩小窗口                               |
 | `<super>` + `l`             | 扩大窗口                               |
 | `<super>` + `q`             | 退出窗口                               |
@@ -72,6 +77,7 @@ patch < [patch file]
 | `<super>` + `<Shift>` + `e` | 关机                                   |
 | `<super>` + `<Shift>` + `r` | 重启                                   |
 | `<super>` + `<grave>`       | 显示和隐藏居中的浮动终端               |
+| `<super>` + `f`             | 全屏窗口                               |
 
 ## 运行 dwm
 
