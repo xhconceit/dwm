@@ -46,6 +46,10 @@ patch < [patch file]
 
 > [hide vacant tags](https://dwm.suckless.org/patches/hide_vacant_tags/) 隐藏没有窗口的标签
 
+6. noborder
+
+> [noborder](https://dwm.suckless.org/patches/noborder/) 只有一个窗口可见时，删除边框
+
 ## APP
 
 + ranger
