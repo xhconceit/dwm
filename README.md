@@ -42,6 +42,10 @@ patch < [patch file]
 
 > [fullscreen](https://dwm.suckless.org/patches/fullscreen/) 窗口全屏
 
+5. hide vacant tags
+
+> [hide vacant tags](https://dwm.suckless.org/patches/hide_vacant_tags/) 隐藏没有窗口的标签
+
 ## APP
 
 + ranger
