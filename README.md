@@ -30,6 +30,10 @@ patch < [patch file]
 > [autostart](https://dwm.suckless.org/patches/autostart/) dwm 处理程序循环前自动启动 `autostart_blocking.sh` 和 `autostart.sh` 脚本
 >> 脚本文件放在 `$XDG_DATA_HOME/dwm`, `$HOME/.local/share/dwm`, `$HOME/.dwm` 文件夹中
 
+2. scratchpad
+
+> [scratchpad](https://dwm.suckless.org/patches/scratchpad/) 添加一个临时的浮动居中终端，可以显示隐藏
+
 ## APP
 
 + ranger
@@ -60,7 +64,7 @@ patch < [patch file]
 | `<super>` + `<F3>`          | 打开 ranger                            |
 | `<super>` + `<Shift>` + `e` | 关机                                   |
 | `<super>` + `<Shift>` + `r` | 重启                                   |
-
+| `<super>` + `<grave>`       | 显示和隐藏居中的浮动终端               |
 
 ## 运行 dwm
 

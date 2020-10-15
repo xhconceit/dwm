@@ -59,6 +59,10 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 
+// 临时的浮动居中终端
+static const char scratchpadname[] = "scratchpad";
+static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
+
 // 终端
 static const char *termcmd[]  = { "st", NULL };
 
@@ -76,6 +80,8 @@ static const char ranger[] = "ranger";
 static const char *rangercmd[] = { "st", "-e", ranger, NULL };
 
 static Key keys[] = {
+	// 临时的浮动居中终端
+	{ MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
         // ranger
         { MODKEY,                       XK_F3,     spawn,          {.v = rangercmd} },
         // 重启
