@@ -50,6 +50,10 @@ patch < [patch file]
 
 > [noborder](https://dwm.suckless.org/patches/noborder/) 只有一个窗口可见时，删除边框
 
+7. pertag
+
+[pertag](https://dwm.suckless.org/patches/pertag/) 标签的布局相互不影响
+
 ## APP
 
 + ranger
