@@ -23,6 +23,13 @@ make clean install
 patch < [patch file]
 ```
 
+#### patches
+
+1. autostart
+
+> [autostart](https://dwm.suckless.org/patches/autostart/) dwm 处理程序循环前自动启动 `autostart_blocking.sh` 和 `autostart.sh` 脚本
+>> 脚本文件放在 `$XDG_DATA_HOME/dwm`, `$HOME/.local/share/dwm`, `$HOME/.dwm` 文件夹中
+
 ## APP
 
 + ranger
