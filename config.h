@@ -96,6 +96,8 @@ static const char ranger[] = "ranger";
 static const char *rangercmd[] = { "st", "-e", ranger, NULL };
 
 static Key keys[] = {
+	// 重启 dwm
+	{ MODKEY|ControlMask|ShiftMask, XK_q,      quit,           {1} },
 	// 增加间隙
         { MODKEY|Mod1Mask,              XK_h,      incrgaps,       {.i = +1 } },
         // 缩小间隙

@@ -66,6 +66,10 @@ patch < [patch file]
 
 > [alpha](https://dwm.suckless.org/patches/alpha/) 半透明状态栏和边框，需要 compton | xcompmgr | picom 安装其中一个才生效
 
+11. restartsig
+
+> [restartsig](https://dwm.suckless.org/patches/restartsig/) 重启 dwm
+
 ## APP
 
 + ranger
@@ -118,7 +122,7 @@ patch < [patch file]
 | `<super>` + `<Alt>` + `o`               | 缩小窗口到屏幕边缘的水平间隙           |
 | `<super>` + `<Shift>` + `y`             | 增加窗口到屏幕边缘的垂直间隙           |
 | `<super>` + `<Shift>` + `o`             | 缩小窗口到屏幕边缘的垂直间隙           |
-
+| `<super>` + `<Ctrl>` + `<Shift>` + `q`  | 重启 dwm                               |
 
 ## 运行 dwm
 
