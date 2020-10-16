@@ -56,11 +56,15 @@ patch < [patch file]
 
 8. vanitygaps
 
-[vanitygaps](https://dwm.suckless.org/patches/vanitygaps/) 窗口之间的间隙
+> [vanitygaps](https://dwm.suckless.org/patches/vanitygaps/) 窗口之间的间隙
 
 9. viewontag
 
-[viewontag](https://dwm.suckless.org/patches/viewontag/) 移动窗口时自动跳转标签
+> [viewontag](https://dwm.suckless.org/patches/viewontag/) 移动窗口时自动跳转标签
+
+10. alpha
+
+> [alpha](https://dwm.suckless.org/patches/alpha/) 半透明状态栏和边框，需要 compton | xcompmgr | picom 安装其中一个才生效
 
 ## APP
 
