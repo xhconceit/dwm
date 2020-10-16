@@ -54,6 +54,10 @@ patch < [patch file]
 
 [pertag](https://dwm.suckless.org/patches/pertag/) 标签的布局相互不影响
 
+8. vanitygaps
+
+[vanitygaps](https://dwm.suckless.org/patches/vanitygaps/) 窗口之间的间隙
+
 ## APP
 
 + ranger
@@ -62,34 +66,51 @@ patch < [patch file]
 
 ## 快捷键
 
-| 键                          | 说明                                   |
-| --------------------------- | -------------------------------------- |
-| `<super>` + `j`             | 下一个显示的窗口                       |
-| `<super>` + `k`             | 上一个显示的窗口                       |
-| `<super>` + `<Shift>` + `j` | 下一个窗口（包括隐藏窗口）             |
-| `<super>` + `<Shift>` + `k` | 上一个窗口（包括隐藏窗口）             |
-| `<super>` + `<Shift>` + `s` | 显示当前窗口                           |
-| `<super>` + `<Shift>` + `h` | 隐藏当前窗口                           |
-| `<super>` + `h`             | 缩小窗口                               |
-| `<super>` + `l`             | 扩大窗口                               |
-| `<super>` + `q`             | 退出窗口                               |
-| `<super>` + `p`             | 打开 dmenu                             |
-| `<super>` + `<Enter>`       | 打开终端                               |
-| `<super>` + `b`             | 显示和隐藏状态栏                       |
-| `<super>` + `i`             | 水平窗口                               |
-| `<super>` + `d`             | 垂直窗口                               |
-| `<Shift>` + `<Enter>`       | 将当前选中窗口或者下一个窗口提为主窗口 |
-| `<super>` + `<Tab>`         | 切换标签                               |
-| `<super>` + `0`             | 选择全部标签                           |
-| `<super>` + `<Shift>` + `0` | 将当前窗口同步到全部标签               |
-| `<super>` + `1 ~ 9`         | 切换到指定标签                         |
-| `<super>` + `<Shift>` + `q` | 退出 dwm                               |
-| `<super>` + `<F2>`          | 打开浏览器                             |
-| `<super>` + `<F3>`          | 打开 ranger                            |
-| `<super>` + `<Shift>` + `e` | 关机                                   |
-| `<super>` + `<Shift>` + `r` | 重启                                   |
-| `<super>` + `<grave>`       | 显示和隐藏居中的浮动终端               |
-| `<super>` + `f`             | 全屏窗口                               |
+| 键                                      | 说明                                   |
+| --------------------------------------- | -------------------------------------- |
+| `<super>` + `j`                         | 下一个显示的窗口                       |
+| `<super>` + `k`                         | 上一个显示的窗口                       |
+| `<super>` + `<Shift>` + `j`             | 下一个窗口（包括隐藏窗口）             |
+| `<super>` + `<Shift>` + `k`             | 上一个窗口（包括隐藏窗口）             |
+| `<super>` + `<Shift>` + `s`             | 显示当前窗口                           |
+| `<super>` + `<Shift>` + `h`             | 隐藏当前窗口                           |
+| `<super>` + `h`                         | 缩小窗口                               |
+| `<super>` + `l`                         | 扩大窗口                               |
+| `<super>` + `q`                         | 退出窗口                               |
+| `<super>` + `p`                         | 打开 dmenu                             |
+| `<super>` + `<Enter>`                   | 打开终端                               |
+| `<super>` + `b`                         | 显示和隐藏状态栏                       |
+| `<super>` + `i`                         | 水平窗口                               |
+| `<super>` + `d`                         | 垂直窗口                               |
+| `<Shift>` + `<Enter>`                   | 将当前选中窗口或者下一个窗口提为主窗口 |
+| `<super>` + `<Tab>`                     | 切换标签                               |
+| `<super>` + `0`                         | 选择全部标签                           |
+| `<super>` + `<Shift>` + `0`             | 将当前窗口同步到全部标签               |
+| `<super>` + `1 ~ 9`                     | 切换到指定标签                         |
+| `<super>` + `<Shift>` + `q`             | 退出 dwm                               |
+| `<super>` + `<F2>`                      | 打开浏览器                             |
+| `<super>` + `<F3>`                      | 打开 ranger                            |
+| `<super>` + `<Shift>` + `e`             | 关机                                   |
+| `<super>` + `<Shift>` + `r`             | 重启                                   |
+| `<super>` + `<grave>`                   | 显示和隐藏居中的浮动终端               |
+| `<super>` + `f`                         | 全屏窗口                               |
+| `<super>` + `<Alt>` + `h`               | 增加间隙                               |
+| `<super>` + `<Alt>` + `l`               | 缩小间隙                               |
+| `<super>` + `<Shift>` + `<Alt>` + `h`   | 增加窗口到屏幕间隙                     |
+| `<super>` + `<Shift>` + `<Alt>` + `l`   | 缩小窗口到屏幕间隙                     |
+| `<super>` + `<Ctrl>` + `<Alt>` + `h`    | 增加窗口之间的间隙                     |
+| `<super>` + `<Ctrl>` + `<Alt>` + `l`    | 缩小窗口之间的间隙                     |
+| `<super>` + `<Alt>` + `0`               | 开启和关闭间隙                         |
+| `<super>` + `<Shift>` + `<Alt>` + `0`   | 重置全部间隙                           |
+| `<super>` + `y`                         | 增加窗口之间的水平间隙                 |
+| `<super>` + `o`                         | 缩小窗口之间的水平间隙                 |
+| `<super>` + `<Ctrl>` + `y`              | 增加窗口之间的垂直间隙                 |
+| `<super>` + `<Ctrl>` + `o`              | 缩小窗口之间的垂直间隙                 |
+| `<super>` + `<Alt>` + `y`               | 增加窗口到屏幕边缘的水平间隙           |
+| `<super>` + `<Alt>` + `o`               | 缩小窗口到屏幕边缘的水平间隙           |
+| `<super>` + `<Shift>` + `y`             | 增加窗口到屏幕边缘的垂直间隙           |
+| `<super>` + `<Shift>` + `o`             | 缩小窗口到屏幕边缘的垂直间隙           |
+
 
 ## 运行 dwm
 
