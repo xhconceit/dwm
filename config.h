@@ -10,6 +10,7 @@ static const unsigned int gappov    = 10;       /* vert outer gap between window
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window 只有一个窗口时是否用间隙 1: 没有 0: 有 */
 static const int showbar            = 1;        /* 0 means no bar 是否显示状态栏*/
 static const int topbar             = 0;        /* 0 means bottom bar 状态栏显示在顶部还是底部*/
+static const Bool viewontag         = True;     /* Switch view on tag switch 是否开启移动窗口时自动跳转标签 */
 static const char *fonts[]          = { "Source Code Pro:size=12" };
 static const char dmenufont[]       = "Source Code Pro:size=12";
 static const char col_gray1[]       = "#222222";

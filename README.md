@@ -58,6 +58,10 @@ patch < [patch file]
 
 [vanitygaps](https://dwm.suckless.org/patches/vanitygaps/) 窗口之间的间隙
 
+9. viewontag
+
+[viewontag](https://dwm.suckless.org/patches/viewontag/) 移动窗口时自动跳转标签
+
 ## APP
 
 + ranger
