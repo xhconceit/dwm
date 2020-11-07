@@ -110,7 +110,15 @@ static const char *lightUp[] = { "xbacklight", "-inc", "5", NULL };
 // 减小亮度
 static const char *lightDown[] = { "xbacklight", "-dec", "5", NULL };
 
+// 图片保存位置
+static const char imageFile[] = "/home/crush/Pictures/scrot.png";
+
+// 截图
+static const char *scrotcmd[] = { "scrot", "-s", imageFile, NULL };
+
 static Key keys[] = {
+	// 截图
+	{ MODKEY,                     XK_s,    spawn,          {.v = scrotcmd} },
 	// 增加亮度
 	{ Mod1Mask,                     XK_F12,    spawn,          {.v = lightUp} },
 	// 减小亮度
