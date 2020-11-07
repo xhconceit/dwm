@@ -76,6 +76,30 @@ patch < [patch file]
 
 > 终端文件管理器
 
++ picom
+
+> 窗口管理器
+
++ dmenu
+
+> 极简应用程序选择器
+
++ st
+
+> 极简终端
+
++ chromium
+
+> chromium 浏览器
+
++ alsa-utils
+
+> 声音管理器
+
++ acpilight
+
+> 亮度管理器
+
 ## 快捷键
 
 | 键                                      | 说明                                   |
@@ -123,6 +147,11 @@ patch < [patch file]
 | `<super>` + `<Shift>` + `y`             | 增加窗口到屏幕边缘的垂直间隙           |
 | `<super>` + `<Shift>` + `o`             | 缩小窗口到屏幕边缘的垂直间隙           |
 | `<super>` + `<Ctrl>` + `<Shift>` + `q`  | 重启 dwm                               |
+| `<Alt>` + `<F1>`                        | 开关声音                               |
+| `<Alt>` + `<F2>`                        | 降低声音                               |
+| `<Alt>` + `<F3>`                        | 扩大声音                               |
+| `<Alt>` + `<F11>`                       | 减小亮度                               |
+| `<Alt>` + `<F12>`                       | 增加亮度                               |
 
 ## 运行 dwm
 
